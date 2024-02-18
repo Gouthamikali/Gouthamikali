@@ -1,0 +1,15 @@
+BEGIN 
+ SET bill to 6000
+ IF bill is greter than 5000 THEN
+ START IF
+     PRINT "total bill after the bill"+bill-bill*10%100
+ END IF
+ ELSE IF bill is equal to 5000
+ START ELSE IF
+     PRINT"total bill after discout"+bill-bill*5%100
+ END ELSE IF
+  ELSE
+  START ELSE
+      PRINT"no discout"
+  END ELSE
+END
