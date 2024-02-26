@@ -1,0 +1,23 @@
+class neon
+{
+public static void main(String[] args)
+{
+int n=9;
+int l=n*n;
+int sum=0;
+temp=0;
+while(l>0);
+{
+temp=l%10;
+sum=sum+temp;
+l=l/10;
+}
+if(sum==n)
+{
+System.out.println("its neon num");
+}
+else
+{
+System.out.println("its not a neon num");
+}
+}
