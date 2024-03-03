@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class accout 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		int actualamm=5000;
+		int pin=123;
+		int count=3;
+		System.out.println("your account balance is"+actualamm);
+        int exist=scan.nextInt();
+		if(exist==pin)
+		{
+            System.out.println("enter your ammount");
+			int amm=scan.nextInt();
+			if(amm<=actualamm)
+			{
+				System.out.println("your withdrawl successfully");
+			}
+			else
+			{
+                System.out.println("insufficient money");
+			}
+
+		}
+		else
+		{
+			System.out.println("invalid pin");
+		}
+		for(int time=0;time<=2;time++)
+		{
+             int again=scan.nextInt();
+			 System.out.println("enter again");
+           
+		}
+         System.out.println("you have entered the pin multiple time so your account is blocked");
+
+	}
+}
