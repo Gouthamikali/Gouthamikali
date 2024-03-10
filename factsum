@@ -1,0 +1,22 @@
+class factSum
+{
+public static void main(String[] args)
+{
+int n=234;
+int id=0;
+int sum=0;
+while(n>0)
+{
+id=n%10;
+int fact=1;
+for(int i=1;i<=id;i++)
+{
+fact=fact*i;
+}
+sum=sum+fact;
+n=n/10;
+}
+System.out.println(sum);
+if(sum
+}
+}
