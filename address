@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class adress 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		String name=scan.nextLine();
+		int age=scan.nextInt();
+		String gmail=scan.nextLine();
+		char ld=scan.next().charAt(0);
+		System.out.println("enter name: "+ name);
+		System.out.println("enter age: " +age);
+		System.out.println("enter email: "+gmail);
+		System.out.println("enter ld: "+ld); 
+
+	}
+}
