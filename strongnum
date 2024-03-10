@@ -1,0 +1,25 @@
+class strong 
+{
+	public static void main(String[] args) 
+	{
+		int n=143;
+		int n1=n;
+		int ld=0;
+		int factsum=0;
+		while(n>0)
+		{
+			int fact=1;
+			ld=n%10;
+            for(int i=1;i<=ld;i++)
+			{
+				fact=fact*i;
+			}
+            factsum=factsum+fact;
+			n=n/10;
+         }
+		 if(factsum==n1)
+		{
+			 System.out.println("strong");
+		}
+	}
+}
