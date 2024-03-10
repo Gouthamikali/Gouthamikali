@@ -1,0 +1,63 @@
+import java.util.Scanner;
+class AccountBala
+{
+	public static void main(String[] args) 
+	{
+		int accountBalance=5000;
+		int existpin=123;
+		int count=0;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the pin");
+		int pin=scan.nextInt();
+		if(pin==existpin)
+		{
+			System.out.println("enter ammount to withdrawal");
+			count++;
+		}
+		else
+		{
+			System.out.println("invalid");
+			System.out.println("eneter again");
+			pin=scan.nextInt();
+			if(pin==existpin)
+			{
+				System.out.println("enter ammount to withdrawal");
+			    count++;
+			}
+			else
+			{
+				System.out.println("invalid");
+			    System.out.println("eneter again");
+			    pin=scan.nextInt();
+			    if(pin==existpin)
+				{
+				    System.out.println("enter ammount to withdrawal");
+			        count++;
+				}
+				else
+				{
+					System.out.println("invalif");
+					System.out.println("your account is blocked");
+				}
+			}
+		}
+		if(count>0)
+		{
+			int ammout=scan.nextInt();
+			if(ammout<=accountBalance)
+			{
+				System.out.println("successuffully");
+			}
+			else
+			{
+				System.out.println("insuffiecient balance");
+		    }
+		}
+
+
+
+
+
+
+	}
+}
