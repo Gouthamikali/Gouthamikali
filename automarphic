@@ -1,0 +1,27 @@
+class automarphic 
+{
+	public static void main(String[] args) 
+	{
+		int n=76;
+		int sq=n*n;
+		boolean f=false;
+		while(n>0)
+		{
+			if(n%10==sq%10)
+			{
+				f=true;
+			}
+			n=n/10;
+			sq=sq/10;
+		}
+		if(f)
+		{
+			System.out.println("automarphic");
+		}
+		else
+		{
+			System.out.println("not a automarphic");
+		}
+		}
+	}
+
