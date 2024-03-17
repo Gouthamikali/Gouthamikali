@@ -1,0 +1,36 @@
+class xylemon 
+{
+	public static void main(String[] args) 
+	{
+		int n=123451;
+		int temp=n;
+		int ld=n%10;
+		System.out.println(ld);
+		while(temp>9)
+		{
+			temp=temp/10;
+		}
+        System.out.println(temp);
+        int sum1=temp+ld;
+		System.out.println(sum1);
+		int sum=0;
+		while(n>0)
+		{
+			int ld1=n%10;
+			 sum=sum+ld1;
+			 n=n/10;
+	}
+			 int mean=sum-sum1;
+			 System.out.println(mean);
+			 if(mean==sum1)
+		{
+				 System.out.println("xyleom");
+		}
+				 else
+		{
+					 System.out.println("plenon");
+		}
+	}
+
+	
+}
