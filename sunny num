@@ -1,0 +1,21 @@
+class sunny 
+{
+	public static void main(String[] args) 
+	{
+		int n=90;
+		int n1=n+1;
+		boolean b=false;
+		for(int i=1;i<=n1;i++)
+		{
+			if(i*i==n1)
+			{
+				b=true;
+				break;
+			}
+		}
+		if(b)
+		{
+			System.out.println("sunny");
+		}
+	}
+}
