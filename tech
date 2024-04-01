@@ -1,0 +1,20 @@
+class tech1 
+{
+	public static void main(String[] args) 
+	{
+		int n=2025;
+		int ld=n%100;
+		System.out.println(ld);
+		int fd=n/100;
+		System.out.println(fd);
+		int sum=ld+fd;
+		if(sum*sum==n)
+		{
+			System.out.println("tech");
+		}
+		else
+		{
+			System.out.println("not a tech number");
+		}
+	}
+}
