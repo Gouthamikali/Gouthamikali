@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class studentDeatils
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int n=5;
+
+		while(n>0)
+		{
+			System.out.println("enter the student student....");
+			String name=sc.next();
+			int age=sc.nextInt();
+			int marks=sc.nextInt();
+			System.out.println("given name: "+name);
+			System.out.println("given age: "+age);
+			System.out.println("marks of student: "+marks);
+			System.out.println("end of student details....");
+
+		}
+
+
+
+		
+	}
+}
