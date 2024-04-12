@@ -1,0 +1,27 @@
+class automarphicNumber 
+{
+	public static void main(String[] args) 
+	{
+		int n=25;
+		int sq=n*n;//625
+		boolean b=false;
+		while(n>0)
+		{
+			if(n%10==sq%10)
+			{
+				b=true;
+			}
+			n=n/10;
+			sq=sq/10;
+		}
+		if(b)
+		{
+			System.out.println("true");
+		}
+		else
+		{
+			System.out.println("false");
+		}
+
+	}
+}
