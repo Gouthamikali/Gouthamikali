@@ -1,0 +1,47 @@
+import java.util.Scanner;
+class disariumNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number.....:");
+		int n=sc.nextInt();//175
+		int m=n;
+		int ld=0;
+		int count=0;
+		int sum=0;//1+49+125
+		int reverse=0;//571
+		while(n>0)
+		{
+			
+			ld=n%10;//5
+			reverse=(reverse*10)+ld;
+		    n=n/10;
+		}
+		while(reverse>0)
+		{
+			int fact=1;//49
+			int ld1=reverse%10;//5
+			count++;//
+			for(int i=1;i<=count;i++)
+			{
+                fact=fact*ld1;
+			}
+			sum=sum+fact;
+			reverse=reverse/10;
+		}
+		System.out.println(sum);
+		if(m==sum)
+		{
+			System.out.println("true");
+		}
+		else
+		{
+			System.out.println("false");
+		}
+			
+	}
+}
+			
+
+	
